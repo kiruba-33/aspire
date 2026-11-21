@@ -1,0 +1,6 @@
+{
+  "name": "Vistara Global — Visa & Immigration Consultants",
+  "description": "Independent visa and immigration consultancy helping Indian students, travelers, professionals, and families navigate international visa applications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

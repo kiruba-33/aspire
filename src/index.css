@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif-brand: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-aspire-navy: #001952;
+  --color-aspire-dark: #07132F;
+  --color-aspire-royal: #002D7A;
+  --color-aspire-blue: #0A4FB3;
+  --color-aspire-gold: #F2BA49;
+  --color-aspire-gold-light: #F8D77A;
+  --color-aspire-canvas: #F6F8FC;
+  --color-aspire-ink: #172033;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #172033;
+    background-color: #F6F8FC;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.font-serif-brand {
+  font-family: var(--font-serif-brand);
+}
+
+/* Custom thin horizontal scrollbar for destination explorer */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
